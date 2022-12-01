@@ -12,7 +12,7 @@ Page({
   hi() {
     sayHello().then((data) => {
        this.setData({
-           message: <string>data
+           message: data
        })
     })
   }
