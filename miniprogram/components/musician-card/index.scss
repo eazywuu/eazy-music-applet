@@ -1,0 +1,32 @@
+/* components/musician-card/index.wxss */
+@import '../../style/varibles.scss';
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 240rpx;
+    align-items: center;
+
+    .photo {
+        width: 240rpx;
+        height: 240rpx;
+        border-radius: 240rpx;
+        overflow: hidden;
+    }
+    .name {
+        margin-top: 20rpx;
+        font-size: 32rpx;
+        // font-family: JetBrains Mono NL;
+        color: $text-active-color;
+        line-height: 36rpx;
+    }
+    .catogory {
+        width: 150rpx;
+        margin-top: 10rpx;
+        font-size: 24rpx;
+        color: $text-color;
+        line-height: 30rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;// 忽略
+        white-space: nowrap;
+    }
+}

@@ -1,11 +1,41 @@
 {
   "pages": [
-    "pages/login/index"
+    "pages/index/index",
+    "pages/login/index",
+    "pages/search/index",
+    "pages/lib/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#0041C4",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一起听",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A869A",
+    "selectedColor": "#7A869A",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-active.png",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/lib/index",
+        "iconPath": "images/lib.png",
+        "selectedIconPath": "images/lib-active.png",
+        "text": "音乐库"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

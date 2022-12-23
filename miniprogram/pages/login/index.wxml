@@ -20,16 +20,16 @@
                 <view class="label">
                     用户名/手机
                 </view>
-                <input placeholder="请输入用户名/手机" placeholder-class="placeholder" type="text" />
+                <input model:value="{{ username }}" placeholder="请输入用户名/手机" placeholder-class="placeholder" type="text" />
                 <view class="label">
                     密码
                 </view>
-                <input placeholder="请输入密码" placeholder-class="placeholder" type="password" />
+                <input model:value="{{ password }}" placeholder="请输入密码" placeholder-class="placeholder" password />
             </view>
             <view class="forget-password">
                 忘记密码？
             </view>
-            <button>登录</button>
+            <button bindtap="onLogin">登录</button>
             <view class="create-account">
                 没有账号？
                 <view class="action">
