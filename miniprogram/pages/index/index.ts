@@ -5,6 +5,7 @@ Page({
      * 页面的初始数据
      */
     data: {
+        // 类别
         categoryBannerList: [
             {
                 image: '../../images/recommend-playlist.png'
@@ -16,25 +17,71 @@ Page({
                 image: '../../images/recommend-playlist.png'
             }
         ],
+        // 音乐人
         musicianBannerList: [
             {
                 id: 111,
-                name: 'rihana',
-                catogory: '流行音乐',
+                name: 'Rihanna',
+                category: '流行音乐',
                 photo: '../../images/musician-photo.png'
             },
             {
                 id: 222,
-                name: 'rihana',
-                catogory: '流行音乐',
+                name: 'Rihanna',
+                category: '流行音乐',
                 photo: '../../images/musician-photo.png'
             },
             {
                 id: 333,
-                name: 'rihana',
-                catogory: '流行音乐',
+                name: 'Rihanna',
+                category: '流行音乐',
                 photo: '../../images/musician-photo.png'
             }
+        ],
+        // 歌单
+        playlist: [
+            {
+                id: 111,
+                title: '黄昏将至| 蓝调R&B奏响日落橘海',
+                description: '歌单描述',
+                image: '../../images/album.png'
+            },
+            {
+                id: 222,
+                title: '黄昏将至| 蓝调R&B奏响日落橘海',
+                description: '歌单描述',
+                image: '../../images/album.png'
+            },
+            {
+                id: 333,
+                title: '黄昏将至| 蓝调R&B奏响日落橘海',
+                description: '歌单描述',
+                image: '../../images/album.png'
+            }
+        ],
+        // 专辑
+        albumBannerList: [
+            {
+                id: 111,
+                title: '《黑色柳丁》',
+                musician: '陶喆',
+                description: '歌单描述',
+                image: '../../images/album.png'
+            },
+            {
+                id: 222,
+                title: '《黑色柳丁》',
+                musician: '陶喆',
+                description: '歌单描述',
+                image: '../../images/album.png'
+            },
+            {
+                id: 333,
+                title: '《黑色柳丁》',
+                musician: '陶喆',
+                description: '歌单描述',
+                image: '../../images/album.png'
+            },
         ]
     },
 

@@ -2,5 +2,5 @@
 <view wx:if="{{ item }}" class="card" bindtap="onTab">
     <image class="photo" src="{{ item.photo }}" />
     <view class="name">{{ item.name }}</view>
-    <view class="catogory">{{ item.catogory }}</view>
+    <view class="category">{{ item.category }}</view>
 </view>

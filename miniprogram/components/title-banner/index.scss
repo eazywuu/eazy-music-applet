@@ -1,4 +1,4 @@
-/* components/musician-banner/index.wxss */
+/* components/title-banner/index.wxss */
 @import '../../style/varibles.scss';
 .header {
     padding: 0 50rpx;
@@ -15,12 +15,4 @@
         font-size: 28rpx;
         color: blue
     }
-}
-
-
-.list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
 }

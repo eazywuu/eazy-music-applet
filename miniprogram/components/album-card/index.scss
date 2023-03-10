@@ -1,18 +1,19 @@
-/* components/musician-card/index.wxss */
+/* components/album-card/index.wxss */
 @import '../../style/varibles.scss';
-.card {
+.album-card {
     display: flex;
     flex-direction: column;
-    width: 240rpx;
+    overflow: hidden;
+    width: 280rpx;
     align-items: center;
 
-    .photo {
-        width: 240rpx;
-        height: 240rpx;
-        border-radius: 240rpx;
+    .image {
+        width: 280rpx;
+        height: 280rpx;
+        border-radius: 30rpx;
         overflow: hidden;
     }
-    .name {
+    .title {
         margin-top: 20rpx;
         font-size: 32rpx;
         color: $text-active-color;
@@ -22,7 +23,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .category {
+    .musician {
         display: flex;
         flex-direction: column;
         align-items: center;

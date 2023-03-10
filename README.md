@@ -5,3 +5,5 @@ eazy-music 微信小程序
 1. 添加index页面
 2. app.ts添加launch时跳转逻辑
 3. request.js添加验证token逻辑和跳转逻辑
+
+## 2022-03-10 Day33

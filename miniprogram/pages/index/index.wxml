@@ -4,7 +4,7 @@
         <view class="user-box">
             <view class="avatar-box">
                 <view>
-                    W
+                    吴
                 </view>
             </view>
             <view class="notifacation-box">
@@ -14,21 +14,56 @@
             </view>
         </view>
     </view>
-
     <scroll-view class="category-banner-list" scroll-x>
         <view style="{{'width: ' + (categoryBannerList.length * 320 + 40)+ 'rpx'}}">
             <view>
-                <view class="category-box" wx:for="{{categoryBannerList}}" wx:key="index">
+                <view class="category-box" wx:for="{{ categoryBannerList }}" wx:key="index">
                     <image src="{{ item.image }}" />
                 </view>
             </view>
         </view>
     </scroll-view>
-
+    <!-- 推荐音乐人 -->
     <view class="trending-musician">
-        <musician-banner 
-        title="推荐音乐人"
-        list= "{{ musicianBannerList }}"
-        />
+        <title-banner title="推荐音乐人" />
+        <scrollable-section>
+            <musician-card 
+                wx:for="{{ musicianBannerList }}"
+                wx:key="index"
+                item="{{ item }}"
+                bindclick="onClick"
+                />
+        </scrollable-section>
+    </view>
+    <!-- 推荐歌单 -->
+    <view class="playlist">
+        <title-banner title="推荐歌单" hideMore />
+        <scrollable-section itemWidth="{{ 320 }}">
+            <album-card 
+                wx:for="{{ playlist }}"
+                wx:key="index"
+                item="{{ item }}"
+                bindclick="onClick"
+                />
+        </scrollable-section>
+    </view>
+    <!-- 推荐专辑 -->
+    <view class="album-list">
+        <title-banner title="推荐专辑" hideMore />
+        <scrollable-section itemWidth="{{ 320 }}">
+            <album-card 
+                wx:for="{{ albumBannerList }}"
+                wx:key="index"
+                item="{{ item }}"
+                bindclick="onClick"
+                />
+        </scrollable-section>
+    </view>
+    <!-- 最近播放 -->
+    <view class="recent-list">
+        <title-banner title="最近播放" />
+        <music-list />
+        <music-list />
+        <music-list />
     </view>
 </view>

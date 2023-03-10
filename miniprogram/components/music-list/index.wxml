@@ -1,0 +1,17 @@
+<!--components/music-list/index.wxml-->
+<view class="list">
+    <view class="music-card">
+        <view class="music-cover">
+            <image src="../../images/tao.jpg" mode=""/>
+            <view class="circle" />
+        </view>
+        <view class="music-info">
+            <view class="music-name">
+                沙滩
+            </view>
+            <view class="music-meta">
+                蓝专 - 陶喆
+            </view>
+        </view>
+    </view>
+</view>

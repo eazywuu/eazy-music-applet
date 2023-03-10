@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/login/index",
     "pages/search/index",
-    "pages/lib/index"
+    "pages/lib/index",
+    "pages/playlist/details"
   ],
   "window": {
     "backgroundTextStyle": "light",

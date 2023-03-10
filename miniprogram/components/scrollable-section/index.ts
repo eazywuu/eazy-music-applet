@@ -1,4 +1,4 @@
-// components/musician-banner/index.ts
+// components/scrollable-section/index.ts
 Component({
     /**
      * 组件的属性列表
@@ -7,13 +7,15 @@ Component({
         styleIsolation: 'isolated',// 样式隔离
     },
     properties: {
-        title: {
-            type: String,
-            default: ''
+        // 滑块项数
+        itemCount: {
+            type: Number,
+            value: 3
         },
-        list: {
-            type: Array,
-            default: []
+        // 滑块项宽度，用于计算scroll-view总宽度
+        itemWidth: {
+            type: Number,
+            value: 290
         }
     },
 
@@ -28,8 +30,6 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        onClick(e: any) {
-            console.log(e)
-        }
+
     }
 })
